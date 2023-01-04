@@ -46,8 +46,6 @@
   </ul>
 </details>
 
-<br/>
-
 ### Key Features <a name="key-features"></a>
 
 - Showing products from an api
