@@ -26,10 +26,9 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Shop <a name="about-project"></a>
+# 📖 Shop App <a name="about-project"></a>
 
 > This is a project to showcase products and their details.
 
