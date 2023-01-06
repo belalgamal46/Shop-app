@@ -1,4 +1,5 @@
 import PageRoutes from './routers/PageRoutes';
+// import { Navbar } from './components';
 
 function App() {
   return <PageRoutes />;
