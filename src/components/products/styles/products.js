@@ -1,8 +1,7 @@
 import styled from 'styled-components/macro';
-import { primaryColor } from '../../../globalStyles';
 
 export const Container = styled.section`
-  background-color: ${primaryColor};
+  background-color: #5586e3;
   @media (max-width: 999px) {
     display: ${({ isActive }) => (isActive ? 'none' : 'initial')};
   }
@@ -17,8 +16,8 @@ export const List = styled.ul`
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 
-  @media (max-width: 280px) {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 `;
 

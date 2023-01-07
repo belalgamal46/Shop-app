@@ -3,6 +3,7 @@ import { primaryColor, tintPrimaryColor } from '../../../globalStyles';
 
 export const Header = styled.header`
   height: ${({ isActive }) => (isActive ? '100vh' : '')};
+  background-color: #4369b2;
 `;
 
 export const Container = styled.nav`
@@ -29,7 +30,7 @@ export const Logo = styled.h1`
 export const BurgerNavContainer = styled.div`
   flex: 1;
   @media (max-width: 999px) {
-    background-color: ${tintPrimaryColor};
+    background-color: #4369b2;
     transform: ${(props) => (props.isActive ? 'translateX(0%)' : 'translateX(100%)')};
     position: absolute;
     top: 0;
@@ -61,7 +62,8 @@ export const Li = styled.li`
   cursor: pointer;
   padding: 1rem;
   text-align: center;
-  background-color: ${({ isSelected }) => (isSelected ? '#6886C0' : 'transparent')};
+  background-color: ${({ isSelected, isDetails }) =>
+    isSelected && !isDetails ? '#5889E6' : 'transparent'};
   border-radius: 0.5rem;
 
   &:hover {
@@ -107,7 +109,7 @@ export const CloseButton = styled.button`
     color: #fff;
 
     &:active {
-      background-color: ${primaryColor};
+      background-color: #5485e2;
     }
   }
 `;

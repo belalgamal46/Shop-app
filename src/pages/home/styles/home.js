@@ -5,6 +5,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   row-gap: 7rem;
+  background-color: #5586e3;
 
   @media (max-width: 600px) {
     padding: ${({ isActive }) => (isActive ? '0' : '2rem')};

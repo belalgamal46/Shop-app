@@ -21,6 +21,10 @@ export const Container = styled.li`
   &:active {
     background-color: ${tintPrimaryColor};
   }
+
+  @media (max-width: 400px) {
+    padding: 1.5rem;
+  }
 `;
 
 export const DetailsContainer = styled.div`
@@ -47,6 +51,10 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 400px) {
+    height: 100px;
+  }
 `;
 
 export const Image = styled.img`
@@ -56,13 +64,13 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 2rem;
+  font-size: 1rem;
 `;
 
 export const Price = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 export const Rating = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
