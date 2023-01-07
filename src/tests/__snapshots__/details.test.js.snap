@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Details Page components rendering should render details page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="details__Container-sc-pcqgz6-0 eQAfAJ"
+      >
+        <div
+          class="details__ImageContainer-sc-pcqgz6-1 cYSKEd"
+        >
+          <img
+            alt="title"
+            class="details__Image-sc-pcqgz6-2 ghjftb"
+            src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+          />
+        </div>
+        <div
+          class="details__DetailsContainer-sc-pcqgz6-3 fOARHG"
+        >
+          <h2
+            class="details__Title-sc-pcqgz6-4 gJRFGP"
+          >
+            title
+          </h2>
+          <p
+            class="details__Description-sc-pcqgz6-5 lmszdN"
+          >
+            test
+          </p>
+          <span
+            class="details__Price-sc-pcqgz6-6 jPVhHw"
+          >
+            Price: $
+            999.99
+          </span>
+          <span
+            class="details__Rate-sc-pcqgz6-8 gRzkhV"
+          >
+            Rate: 
+            2.2
+          </span>
+          <span
+            class="details__Category-sc-pcqgz6-7 gUJCgU"
+          >
+            Category: 
+            electronics
+          </span>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="details__Container-sc-pcqgz6-0 eQAfAJ"
+    >
+      <div
+        class="details__ImageContainer-sc-pcqgz6-1 cYSKEd"
+      >
+        <img
+          alt="title"
+          class="details__Image-sc-pcqgz6-2 ghjftb"
+          src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+        />
+      </div>
+      <div
+        class="details__DetailsContainer-sc-pcqgz6-3 fOARHG"
+      >
+        <h2
+          class="details__Title-sc-pcqgz6-4 gJRFGP"
+        >
+          title
+        </h2>
+        <p
+          class="details__Description-sc-pcqgz6-5 lmszdN"
+        >
+          test
+        </p>
+        <span
+          class="details__Price-sc-pcqgz6-6 jPVhHw"
+        >
+          Price: $
+          999.99
+        </span>
+        <span
+          class="details__Rate-sc-pcqgz6-8 gRzkhV"
+        >
+          Rate: 
+          2.2
+        </span>
+        <span
+          class="details__Category-sc-pcqgz6-7 gUJCgU"
+        >
+          Category: 
+          electronics
+        </span>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

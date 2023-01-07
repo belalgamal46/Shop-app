@@ -6,9 +6,8 @@ import { Container, List } from './styles/products';
 
 const Products = () => {
   const dispatch = useDispatch();
-  const productsList = useSelector((state) => state.homeReducer.products);
-  const isLoading = useSelector((state) => state.homeReducer.isLoading);
-  const isOpen = useSelector((state) => state.homeReducer.isActive);
+  const homeReducer = useSelector((state) => state.homeReducer);
+  const { isLoading, products: productsList, isActive: isOpen } = homeReducer;
 
   useEffect(() => {
     if (productsList.length === 0) dispatch(getProducts());

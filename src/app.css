@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #4369b2;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+}
