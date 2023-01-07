@@ -11,6 +11,7 @@ describe('Test Navbar Component', () => {
       categories: ['electronics', 'jewelery', "men's clothing", "women's clothing"],
       isActive: false,
       isLoading: false,
+      categoryTitle: 'All Products',
     });
     const tree = render(
       <BrowserRouter>

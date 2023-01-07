@@ -29,7 +29,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const homeReducer = useSelector((state) => state.homeReducer);
-  const { categories, isActive: isOpen, isLoading } = homeReducer;
+  const { categories, isActive: isOpen, isLoading, categoryTitle } = homeReducer;
   useEffect(() => {
     if (categories.length === 0) dispatch(getCategories());
   }, [categories.length, dispatch]);
@@ -43,7 +43,7 @@ const Navbar = () => {
 
     const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
 
-    dispatch(swapCategoryTitle(categoryTitle));
+    if (!location.pathname.includes('/details')) dispatch(swapCategoryTitle(categoryTitle));
     if (isOpen) {
       dispatch(isActive());
     }
@@ -51,11 +51,15 @@ const Navbar = () => {
     navigate('/');
   };
 
-  const category = categories?.map((category) => (
-    <Li key={category} onClick={() => handleNavLinksClick(category)}>
-      {category}
-    </Li>
-  ));
+  const category = categories?.map((category) => {
+    const isSelected = category === categoryTitle.charAt(0).toLowerCase() + categoryTitle.slice(1);
+
+    return (
+      <Li key={category} onClick={() => handleNavLinksClick(category)} isSelected={isSelected}>
+        {category}
+      </Li>
+    );
+  });
 
   const getAllProducts = () => {
     dispatch(getProducts());

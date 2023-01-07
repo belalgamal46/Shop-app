@@ -45,8 +45,8 @@ export const NavLinks = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  column-gap: 3rem;
-  justify-content: space-between;
+  column-gap: 2rem;
+  justify-content: flex-end;
 
   @media (max-width: 999px) {
     flex-direction: column;
@@ -59,7 +59,14 @@ export const Li = styled.li`
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: ${({ isSelected }) => (isSelected ? '#6886C0' : 'transparent')};
+  border-radius: 0.5rem;
+
+  &:hover {
+    text-decoration: ${({ isSelected }) => (isSelected ? 'initial' : 'underline')};
+  }
 `;
 
 export const BurgerButton = styled.button`
