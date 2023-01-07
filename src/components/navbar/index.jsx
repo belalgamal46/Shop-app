@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 import {
@@ -26,6 +26,7 @@ import {
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const categories = useSelector((state) => state.homeReducer.categories);
   const isOpen = useSelector((state) => state.homeReducer.isActive);
   const isLoading = useSelector((state) => state.homeReducer.isLoading);
@@ -40,11 +41,15 @@ const Navbar = () => {
 
   const handleNavLinksClick = (category) => {
     dispatch(getProductsByCategory(category));
+
     const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
+
     dispatch(swapCategoryTitle(categoryTitle));
     if (isOpen) {
       dispatch(isActive());
     }
+
+    navigate('/');
   };
 
   const category = categories?.map((category) => (
@@ -63,7 +68,7 @@ const Navbar = () => {
       <Header isActive={isOpen} isLoading={isLoading}>
         <Container>
           <BurgerInnerContainer>
-            <BackButton>Back</BackButton>
+            <BackButton onClick={() => navigate('/')}>Back</BackButton>
             <Logo onClick={getAllProducts}>
               <NavLink to="/">Shop</NavLink>
             </Logo>
