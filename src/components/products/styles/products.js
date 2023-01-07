@@ -21,3 +21,8 @@ export const List = styled.ul`
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
 `;
+
+export const Spinner = styled.h2`
+  font-size: 4rem;
+  color: #fff;
+`;

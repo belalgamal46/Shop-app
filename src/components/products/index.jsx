@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/homeSlice';
 import Product from '../product';
-import { Container, List } from './styles/products';
+import { Container, List, Spinner } from './styles/products';
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const Products = () => {
 
   return (
     <Container isActive={isOpen}>
-      <List>{isLoading ? 'Loading...' : product}</List>
+      {isLoading ? <Spinner>Loading...</Spinner> : <List>{product}</List>}
     </Container>
   );
 };
