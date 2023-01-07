@@ -1,12 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -55,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://shop-app-red-beta.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
