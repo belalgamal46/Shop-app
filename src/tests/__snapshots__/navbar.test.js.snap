@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Navbar Component Should render navbar 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="navbar__Header-sc-1niipn2-0 bHhPcD"
+      >
+        <nav
+          class="navbar__Container-sc-1niipn2-1 dRSnrV"
+        >
+          <div
+            class="navbar__BurgerInnerContainer-sc-1niipn2-7 cmODOR"
+          >
+            <h1
+              class="navbar__Logo-sc-1niipn2-2 iYEQkW"
+            >
+              <a
+                aria-current="page"
+                class="active"
+                href="/"
+              >
+                Shop
+              </a>
+            </h1>
+            <button
+              class="navbar__BurgerButton-sc-1niipn2-6 hFUJHC"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="navbar__BurgerNavContainer-sc-1niipn2-3 fbmkkZ"
+          >
+            <button
+              class="navbar__CloseButton-sc-1niipn2-8 bptjko"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <ul
+              class="navbar__NavLinks-sc-1niipn2-4 jQlcaY"
+            >
+              <li
+                class="navbar__Li-sc-1niipn2-5 hKGGci"
+              >
+                electronics
+              </li>
+              <li
+                class="navbar__Li-sc-1niipn2-5 hKGGci"
+              >
+                jewelery
+              </li>
+              <li
+                class="navbar__Li-sc-1niipn2-5 hKGGci"
+              >
+                men's clothing
+              </li>
+              <li
+                class="navbar__Li-sc-1niipn2-5 hKGGci"
+              >
+                women's clothing
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="navbar__Header-sc-1niipn2-0 bHhPcD"
+    >
+      <nav
+        class="navbar__Container-sc-1niipn2-1 dRSnrV"
+      >
+        <div
+          class="navbar__BurgerInnerContainer-sc-1niipn2-7 cmODOR"
+        >
+          <h1
+            class="navbar__Logo-sc-1niipn2-2 iYEQkW"
+          >
+            <a
+              aria-current="page"
+              class="active"
+              href="/"
+            >
+              Shop
+            </a>
+          </h1>
+          <button
+            class="navbar__BurgerButton-sc-1niipn2-6 hFUJHC"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="navbar__BurgerNavContainer-sc-1niipn2-3 fbmkkZ"
+        >
+          <button
+            class="navbar__CloseButton-sc-1niipn2-8 bptjko"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="navbar__NavLinks-sc-1niipn2-4 jQlcaY"
+          >
+            <li
+              class="navbar__Li-sc-1niipn2-5 hKGGci"
+            >
+              electronics
+            </li>
+            <li
+              class="navbar__Li-sc-1niipn2-5 hKGGci"
+            >
+              jewelery
+            </li>
+            <li
+              class="navbar__Li-sc-1niipn2-5 hKGGci"
+            >
+              men's clothing
+            </li>
+            <li
+              class="navbar__Li-sc-1niipn2-5 hKGGci"
+            >
+              women's clothing
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
