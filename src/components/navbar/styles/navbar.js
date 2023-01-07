@@ -109,4 +109,5 @@ export const BackButton = styled.span`
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
+  cursor: pointer;
 `;
