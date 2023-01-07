@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   #root{
     position: relative;
     overflow-x: hidden;
+    height: 100vh;
   }
 `;
 

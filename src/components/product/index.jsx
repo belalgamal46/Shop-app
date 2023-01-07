@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
+
 import {
   Container,
   Image,
@@ -16,7 +17,7 @@ const Product = ({ product }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/details');
+    navigate(`/details/product/${product.id}`);
   };
 
   return (
@@ -37,6 +38,7 @@ const Product = ({ product }) => {
 
 Product.propTypes = {
   product: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     image: PropTypes.string,
     price: PropTypes.number,

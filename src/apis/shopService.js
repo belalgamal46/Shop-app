@@ -13,7 +13,7 @@ export const fetchProducts = async () => {
 
 export const fetchProductById = async (id) => {
   try {
-    const response = await axios.get(`${baseUrl}/${id}`);
+    const response = await axios.get(`${baseUrl}/products/${id}`);
     return response.data;
   } catch (error) {
     return error;

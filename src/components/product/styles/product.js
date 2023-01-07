@@ -26,7 +26,6 @@ export const Container = styled.li`
 export const DetailsContainer = styled.div`
   align-self: flex-start;
   width: 100%;
-  /* height: 10rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
