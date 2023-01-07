@@ -15,6 +15,14 @@ const detailsSlice = createSlice({
     singleProduct: {},
     error: '',
     isLoading: false,
+    isActive: false,
+  },
+
+  reducers: {
+    isActive: (state) => ({
+      ...state,
+      isActive: !state.isActive,
+    }),
   },
 
   extraReducers: (builder) => {
