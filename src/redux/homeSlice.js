@@ -1,20 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import {
-  fetchProducts,
-  fetchProductById,
-  fetchCategories,
-  fetchProductsByCategory,
-} from '../apis/shopService';
+import { fetchProducts, fetchCategories, fetchProductsByCategory } from '../apis/shopService';
 
 // Actions
 const FETCH_PRODUCTS = 'shop/products/FETCH_PRODUCTS';
-const FETCH_PRODUCTS_BY_ID = 'shop/products/FETCH_PRODUCTS_BY_ID';
 const FETCH_CATOGRIES = 'shop/categories/FETCH_CATOGRIES';
 const FETCH_PRODUCTS_BY_CATEGORY = 'shop/categories/FETCH_PRODUCTS_BY_CATEGORY';
 
 // Actions Creator
 export const getProducts = createAsyncThunk(FETCH_PRODUCTS, fetchProducts);
-export const getProductsById = createAsyncThunk(FETCH_PRODUCTS_BY_ID, fetchProductById);
 export const getCategories = createAsyncThunk(FETCH_CATOGRIES, fetchCategories);
 export const getProductsByCategory = createAsyncThunk(
   FETCH_PRODUCTS_BY_CATEGORY,
@@ -46,43 +39,41 @@ const homeSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getProducts.fulfilled, (state, action) => ({
-        ...state,
-        products: action.payload,
-        isLoading: false,
-      }))
-      .addCase(getProducts.pending, (state) => ({
-        ...state,
-        products: [],
-        isLoading: true,
-      }))
-      .addCase(getProducts.rejected, (state, action) => ({
-        ...state,
-        products: [],
-        isLoading: false,
-        error: action.payload,
-      }))
-      .addCase(getCategories.fulfilled, (state, action) => ({
-        ...state,
-        categories: action.payload,
-        isLoading: false,
-      }))
-      .addCase(getProductsByCategory.fulfilled, (state, action) => ({
-        ...state,
-        products: action.payload,
-        isLoading: false,
-      }))
+      .addCase(getProducts.pending, (state) => {
+        const stateData = state;
+        stateData.isLoading = true;
+      })
+      .addCase(getProducts.fulfilled, (state, action) => {
+        const stateData = state;
+        stateData.isLoading = false;
+        stateData.products = action.payload;
+      })
+      .addCase(getProducts.rejected, (state, action) => {
+        const stateData = state;
+        stateData.isLoading = false;
+        stateData.error = action.payload;
+        stateData.products = [];
+      })
+      .addCase(getCategories.fulfilled, (state, action) => {
+        const stateData = state;
+        stateData.categories = action.payload;
+        stateData.isLoading = false;
+      })
       .addCase(getProductsByCategory.pending, (state) => ({
         ...state,
-        products: [],
         isLoading: true,
       }))
-      .addCase(getProductsByCategory.rejected, (state, action) => ({
-        ...state,
-        products: [],
-        isLoading: false,
-        error: action.payload,
-      }));
+      .addCase(getProductsByCategory.fulfilled, (state, action) => {
+        const stateData = state;
+        stateData.products = action.payload;
+        stateData.isLoading = false;
+      })
+      .addCase(getProductsByCategory.rejected, (state, action) => {
+        const stateData = state;
+        stateData.products = [];
+        stateData.isLoading = false;
+        stateData.error = action.payload;
+      });
   },
 });
 
