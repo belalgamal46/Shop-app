@@ -12,13 +12,8 @@ Object {
           class="navbar__Container-sc-1niipn2-1 dRSnrV"
         >
           <div
-            class="navbar__BurgerInnerContainer-sc-1niipn2-7 ePkjyb"
+            class="navbar__BurgerInnerContainer-sc-1niipn2-7 cmODOR"
           >
-            <span
-              class="navbar__BackButton-sc-1niipn2-9 iPkZXb"
-            >
-              Back
-            </span>
             <h1
               class="navbar__Logo-sc-1niipn2-2 iYEQkW"
             >
@@ -109,13 +104,8 @@ Object {
         class="navbar__Container-sc-1niipn2-1 dRSnrV"
       >
         <div
-          class="navbar__BurgerInnerContainer-sc-1niipn2-7 ePkjyb"
+          class="navbar__BurgerInnerContainer-sc-1niipn2-7 cmODOR"
         >
-          <span
-            class="navbar__BackButton-sc-1niipn2-9 iPkZXb"
-          >
-            Back
-          </span>
           <h1
             class="navbar__Logo-sc-1niipn2-2 iYEQkW"
           >
