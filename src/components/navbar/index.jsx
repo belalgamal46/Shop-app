@@ -27,10 +27,8 @@ import {
 const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const categories = useSelector((state) => state.homeReducer.categories);
-  const isOpen = useSelector((state) => state.homeReducer.isActive);
-  const isLoading = useSelector((state) => state.homeReducer.isLoading);
-
+  const homeReducer = useSelector((state) => state.homeReducer);
+  const { categories, isActive: isOpen, isLoading } = homeReducer;
   useEffect(() => {
     if (categories.length === 0) dispatch(getCategories());
   }, [categories.length, dispatch]);

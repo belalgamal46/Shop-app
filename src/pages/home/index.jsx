@@ -3,9 +3,8 @@ import { Products } from '../../components';
 import { Main, Title } from './styles/home';
 
 const Home = () => {
-  const isOpen = useSelector((state) => state.homeReducer.isActive);
-  const categoryTitle = useSelector((state) => state.homeReducer.categoryTitle);
-  const products = useSelector((state) => state.homeReducer.products);
+  const homeReducer = useSelector((state) => state.homeReducer);
+  const { isActive: isOpen, categoryTitle, products } = homeReducer;
 
   return (
     <Main isActive={isOpen}>

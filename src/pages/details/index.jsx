@@ -17,11 +17,11 @@ import {
 const Details = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
-  const product = useSelector((state) => state.detailsReducer.singleProduct);
-  const isOpen = useSelector((state) => state.homeReducer.isActive);
+  const detailsReducer = useSelector((state) => state.detailsReducer);
+  const { singleProduct: product, isActive: isOpen } = detailsReducer;
   const { category, description, image, price, rating, title } = product;
-
   const productId = pathname.split('/')[3];
+
   useEffect(() => {
     dispatch(getProductsById(productId));
   }, [dispatch, productId]);
