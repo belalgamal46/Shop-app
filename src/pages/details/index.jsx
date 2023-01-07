@@ -18,7 +18,8 @@ const Details = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
   const detailsReducer = useSelector((state) => state.detailsReducer);
-  const { singleProduct: product, isActive: isOpen } = detailsReducer;
+  const { singleProduct: product } = detailsReducer;
+  const { isActive: isOpen } = useSelector((state) => state.homeReducer);
   const { category, description, image, price, rating, title } = product;
   const productId = pathname.split('/')[3];
 

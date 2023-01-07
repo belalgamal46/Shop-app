@@ -46,3 +46,4 @@ const detailsSlice = createSlice({
   },
 });
 export default detailsSlice.reducer;
+export const { isActive } = detailsSlice.actions;

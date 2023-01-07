@@ -10,6 +10,7 @@ import {
   getProducts,
   swapCategoryTitle,
 } from '../../redux/homeSlice';
+import { isActive as isOpened } from '../../redux/detailsSlice';
 
 import {
   Logo,
@@ -29,22 +30,28 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const homeReducer = useSelector((state) => state.homeReducer);
-  const { categories, isActive: isOpen, isLoading, categoryTitle } = homeReducer;
+  const { categories, isActive: isOpen, categoryTitle } = homeReducer;
   useEffect(() => {
     if (categories.length === 0) dispatch(getCategories());
   }, [categories.length, dispatch]);
 
   const handleBurgerButtonClick = () => {
     dispatch(isActive());
+    dispatch(isOpened());
   };
 
-  const handleNavLinksClick = (category) => {
+  const handleNavLinksClick = (event, category) => {
     dispatch(getProductsByCategory(category));
 
     const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
 
-    if (!location.pathname.includes('/details')) dispatch(swapCategoryTitle(categoryTitle));
-    if (isOpen) {
+    if (!location.pathname.includes('/details')) {
+      dispatch(swapCategoryTitle(categoryTitle));
+      dispatch(isActive());
+    }
+
+    if (location.pathname.includes('/details')) {
+      dispatch(swapCategoryTitle(categoryTitle));
       dispatch(isActive());
     }
 
@@ -53,9 +60,16 @@ const Navbar = () => {
 
   const category = categories?.map((category) => {
     const isSelected = category === categoryTitle.charAt(0).toLowerCase() + categoryTitle.slice(1);
+    const isDetails = location.pathname.includes('/details');
 
     return (
-      <Li key={category} onClick={() => handleNavLinksClick(category)} isSelected={isSelected}>
+      <Li
+        key={category}
+        onClick={(event) => handleNavLinksClick(event, category)}
+        isDetails={isDetails}
+        isSelected={isSelected}
+        isOpen={isOpen}
+      >
         {category}
       </Li>
     );
@@ -68,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Header isActive={isOpen} isLoading={isLoading}>
+      <Header isActive={isOpen}>
         <Container>
           <BurgerInnerContainer isVisible={location.pathname.includes('/details')}>
             {location.pathname.includes('/details') ? (
