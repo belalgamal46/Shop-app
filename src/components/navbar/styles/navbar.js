@@ -79,9 +79,10 @@ export const BurgerButton = styled.button`
 
 export const BurgerInnerContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: ${({ isVisible }) => (isVisible ? 'space-around' : 'space-between')};
   align-items: center;
   flex: 2;
+
   @media (max-width: 999px) {
     width: 100%;
     justify-content: space-between;
