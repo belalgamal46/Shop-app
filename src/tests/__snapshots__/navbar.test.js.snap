@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="navbar__Header-sc-1niipn2-0 jvDawz"
+        class="navbar__Header-sc-1niipn2-0 bHhPcD"
       >
         <nav
           class="navbar__Container-sc-1niipn2-1 dRSnrV"
@@ -44,10 +44,10 @@ Object {
             </button>
           </div>
           <div
-            class="navbar__BurgerNavContainer-sc-1niipn2-3 hUqQdB"
+            class="navbar__BurgerNavContainer-sc-1niipn2-3 fbmkkZ"
           >
             <button
-              class="navbar__CloseButton-sc-1niipn2-8 giAwRQ"
+              class="navbar__CloseButton-sc-1niipn2-8 bptjko"
             >
               <svg
                 fill="currentColor"
@@ -98,7 +98,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="navbar__Header-sc-1niipn2-0 jvDawz"
+      class="navbar__Header-sc-1niipn2-0 bHhPcD"
     >
       <nav
         class="navbar__Container-sc-1niipn2-1 dRSnrV"
@@ -136,10 +136,10 @@ Object {
           </button>
         </div>
         <div
-          class="navbar__BurgerNavContainer-sc-1niipn2-3 hUqQdB"
+          class="navbar__BurgerNavContainer-sc-1niipn2-3 fbmkkZ"
         >
           <button
-            class="navbar__CloseButton-sc-1niipn2-8 giAwRQ"
+            class="navbar__CloseButton-sc-1niipn2-8 bptjko"
           >
             <svg
               fill="currentColor"
